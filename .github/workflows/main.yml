@@ -1,0 +1,14 @@
+name: Run Cypress in chrome
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-20.04
+    container: cypress/browsers:node14.15.0-chrome86-ff82
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          spec: cypress/integration/login.spec.js
+

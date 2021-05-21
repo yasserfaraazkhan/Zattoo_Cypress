@@ -1,0 +1,29 @@
+
+{
+    "chromeWebSecurity": false,
+    "video": false,
+    "videoCompression": 32,
+    "baseUrl": "https://zattoo.com/",
+    "fixturesFolder": "cypress/fixtures/",
+    "integrationFolder": "cypress/integration",
+    "pluginsFile": "cypress/plugins/index.js",
+    "screenshotsFolder": "TestReport/assets",
+    "videosFolder": "cypress/videos",
+    "supportFile": "cypress/support/index.js",
+    "defaultCommandTimeout": 5000,
+    "retries": 0,
+    "viewportWidth": 1400,
+    "viewportHeight": 1200,
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
+    }
+}
+  
