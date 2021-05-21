@@ -11,4 +11,3 @@ jobs:
         with:
           browser: chrome
           spec: cypress/integration/login.spec.js
-
