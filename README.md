@@ -22,9 +22,9 @@ npm i
 
 
 # Reports
-![Report with screenshot on failure](demo-with-Failure-screenshot-rep.png)
+![Report with screenshot on failure](demo-with-Failure-screenshot-rep.gif)
 
-![Run with Open UI](demo_with_UI_opened.png)
+![Run with Open UI](demo_with_UI_opened.gif)
 
 
 
