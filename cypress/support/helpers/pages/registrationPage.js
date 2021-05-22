@@ -6,6 +6,7 @@ class RegistrationPage extends BasePage {
     constructor() {
         super();
         this.locators = {
+            appNodeElement: '#app-node',
             additionalSignUp: "SIGNUP_FORM_SSO_BLOCK",
             cookieBanner: "#onetrust-accept-btn-handler",
             chooseFreeServiceOption: "SERVICE_LOGO_FREE",
@@ -39,6 +40,9 @@ class RegistrationPage extends BasePage {
         }
     }
 
+    /**
+     * Navigate to signup page. Implicitly assert Successful Navigation
+     */
     navigateToSignUpPage() {
         this.visitPage('/start/signup')
         cy
@@ -52,6 +56,9 @@ class RegistrationPage extends BasePage {
         return this;
     }
 
+    /**
+     * Assert error messages displayed when required feild is left empty
+     */
     assertMandatoryFieldsErrorMessages() {
         cy
             .getElement(this.locators.signupButton)
@@ -63,6 +70,11 @@ class RegistrationPage extends BasePage {
         return this;
     }
 
+    /**
+     * 
+     * @param {Object} user Enter required user details for signup 
+     * @returns 
+     */
     enterNewUserDetails(user) {
         cy
             .getElement(this.locators.email).type(user.email)
@@ -107,6 +119,9 @@ class RegistrationPage extends BasePage {
         return this;
     }
 
+    /**
+     * verify user is Successfully Signed up
+     */
     assertSuccessfullSubscription() {
         cy
             .contains('Stream now').as('streamNow')
@@ -145,6 +160,16 @@ class RegistrationPage extends BasePage {
             .isDisplayed(this.locators.paymentCard)
             .isDisplayed(this.locators.paymentPaypal)
             .isDisplayed(this.locators.paymentKlarnaDirect);
+        return this;
+    }
+
+    assertZattooUnAvailableMessageDisplayed() {
+        cy
+            .visit('/start/signup')
+            .get(this.locators.appNodeElement)
+            .find('p').eq(2)
+            .invoke('text')
+            .should('eq', MESSAGES.ZATTOOUNAVAILABLE);
         return this;
     }
 }
