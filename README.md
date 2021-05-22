@@ -1,8 +1,12 @@
 # Zattoo_Cypress
 
+- [![CircleCI](https://circleci.com/gh/cypress-io/cypress/tree/master.svg?style=svg)](https://circleci.com/gh/cypress-io/cypress/tree/master) - `main` branch
+
+
 ## Installing
 
 Install Dependencies [get started](https://docs.cypress.io/guides/getting-started/installing-cypress.html).
+
 Requirements 
 ```bash
 1. Node 14.15.0
@@ -16,10 +20,8 @@ git clone https://github.com/yasserfaraazkhan/Zattoo_Cypress.git
 cd Zattoo_Cypress
 nvm use
 npm i
+npm run test
 ```
-
-- [![CircleCI](https://circleci.com/gh/cypress-io/cypress/tree/master.svg?style=svg)](https://circleci.com/gh/cypress-io/cypress/tree/master) - `main` branch
-
 
 # Reports
 ![Report with screenshot on failure](demo-with-Failure-screenshot-rep.gif)
