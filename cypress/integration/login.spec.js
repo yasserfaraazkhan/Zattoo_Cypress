@@ -7,7 +7,7 @@ describe("On the Login page, User", () => {
         loginPage.navigateToLoginPage()
     })
 
-    it('should be prompted with error messages when required invalid email is entered', () => {
+    it('should be prompted with error messages when invalid email is entered', () => {
 
         loginPage.enterLoginDetails(testData.getSpecialCharDeatils());
         loginPage.assertErrorDisplayed();
