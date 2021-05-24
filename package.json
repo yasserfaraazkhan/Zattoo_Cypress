@@ -8,6 +8,7 @@
     "pretest": "npm run clean:reports",
     "cy-open": "TZ=Europe/Berlin cypress open",
     "cy-run": "cypress run",
+    "cy-update": "cypress run --spec 'cypress/integration/visualTests/**/*.js' --env updateSnapshots=true",
     "cy-visual": "cypress run --spec 'cypress/integration/visualTests/**/*.js'",
     "combine-reports": "mochawesome-merge cypress/reports/mochareports/*.json > cypress/reports/mochareports/report.json",
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",

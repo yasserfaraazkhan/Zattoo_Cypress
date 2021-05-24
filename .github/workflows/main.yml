@@ -10,7 +10,9 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           browser: chrome
-          spec: cypress/integration/functionalTests/login.spec.js
+          spec: |
+            cypress/integration/functionalTests/login.spec.js
+            cypress/integration/functionalTests/mockSignup.spec.js
 
   visualTests:
     runs-on: ubuntu-20.04
@@ -18,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Cypress run
-        uses: cypress-io/github-action@v2
-        with:
-          browser: chrome
-          spec: cypress/integration/visualTests/**.spec.js
+        run: |
+          npm run cy-update
+          npm run cy-visual
+
