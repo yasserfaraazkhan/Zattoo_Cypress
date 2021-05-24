@@ -1,4 +1,4 @@
-name: Run Cypress in chrome
+name: Functional & visual Tests
 on: [push]
 jobs:
   functionalTests:

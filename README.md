@@ -7,12 +7,14 @@
 Install Dependencies [get started](https://docs.cypress.io/guides/getting-started/installing-cypress.html).
 
 Requirements 
+
 ```bash
 1. Node 14.15.0
 2. NVM
 3. Docker (to run it without any other Dependency Manually Configured)
 4. Git
 ```
+
 To run the project
 ```bash
 git clone https://github.com/yasserfaraazkhan/Zattoo_Cypress.git
@@ -60,7 +62,7 @@ npm run test
         Cypress will start recording all the states for all the steps performed during a run and once tests are finished
         you can see the exact state of a specific step. Very useful to see exactly the failures.
 
-# Reports
+# Demo Run 
 ![Report with screenshot on failure](demo-with-Failure-screenshot-rep.gif)
 
 ![Run with Open UI](demo_with_UI_opened.gif)
