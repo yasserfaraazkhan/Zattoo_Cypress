@@ -21,6 +21,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Cypress run
         run: |
+          npm i
           npm run cy-update
           npm run cy-visual
 
