@@ -8,6 +8,7 @@
     "pretest": "npm run clean:reports",
     "cy-open": "TZ=Europe/Berlin cypress open",
     "cy-run": "cypress run",
+    "cy-visual": "cypress run --spec 'cypress/integration/visualTests/**/*.js'",
     "combine-reports": "mochawesome-merge cypress/reports/mochareports/*.json > cypress/reports/mochareports/report.json",
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
     "posttest": "npm run combine-reports && npm run generate-report",
@@ -24,10 +25,8 @@
   },
   "homepage": "https://github.com/yasserfaraazkhan/Zattoo_Cypress#readme",
   "devDependencies": {
-    "@playwright/test": "^0.1111.0",
-    "browserstack-cypress-cli": "^1.8.1",
     "chance": "^1.1.7",
-    "cypress": "^7.2.0",
+    "cypress": "7.2.0",
     "cypress-browser-permissions": "^1.0.5",
     "cypress-image-snapshot": "^4.0.1",
     "cypress-mochawesome-reporter": "^2.0.1",
@@ -37,8 +36,6 @@
     "mocha": "^8.4.0",
     "mochawesome": "^6.2.2",
     "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^5.2.0",
-    "playwright": "^1.11.1",
-    "playwright-test": "^5.0.0"
+    "mochawesome-report-generator": "^5.2.0"
   }
 }
