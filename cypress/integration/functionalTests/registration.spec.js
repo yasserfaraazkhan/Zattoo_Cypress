@@ -1,5 +1,5 @@
-import { registrationPage } from '../support/helpers/pages/registrationPage';
-import { testData } from '../support/helpers/TestData/generateData';
+import { registrationPage } from '../../support/helpers/pages/registrationPage';
+import { testData } from '../../support/helpers/TestData/generateData';
 
 describe("On the Zattoo's signup page, User", () => {
 

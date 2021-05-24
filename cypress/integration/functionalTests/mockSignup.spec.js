@@ -1,6 +1,6 @@
-import { registrationPage } from '../support/helpers/pages/registrationPage';
-import { testData } from '../support/helpers/TestData/generateData';
-import { apiEndpoint } from '../apiHelpers/endpointList';
+import { registrationPage } from '../../support/helpers/pages/registrationPage';
+import { testData } from '../../support/helpers/TestData/generateData';
+import { apiEndpoint } from '../../apiHelpers/endpointList';
 
 describe("Zatto's Availability in not other countries", () => {
 

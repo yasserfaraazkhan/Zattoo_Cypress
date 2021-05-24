@@ -1,7 +1,15 @@
 import 'cypress-wait-until';
+import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
 
 const path = require("path");
 const COMMAND_DELAY = 500;
+
+addMatchImageSnapshotCommand({
+  failureThreshold: 0.0,
+  failureThresholdType: 'percent',
+  customDiffConfig: { threshold: 0.0 },
+  capture: 'viewport',
+});
 
 /*
 * common command to assert element not visible

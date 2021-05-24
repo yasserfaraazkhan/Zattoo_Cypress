@@ -7,12 +7,17 @@ class LoginPage extends BasePage {
         super();
         this.locators = {
             email: "AUTHENTICATION_INPUT_USERNAME",
+            forgotPasswordContainer: "false",
             forgotPasswordLink: "AUTHENTICATION_LINK_FORGOT_PASSWORD",
             forgotPasswordPageHeader: "AUTHENTICATION_PAGE_HEADING",
             forgotPasswordSuccessPageHeader: "AUTHENTICATION_SUCCESS_PAGE",
             password: "PASSWORD_FIELD_INPUT",
             submit: "AUTHENTICATION_SUBMIT",
         }
+    }
+
+    getAlert(){
+        return BasePage.locators.dangerIcon;
     }
 
     assertErrorDisplayed() {

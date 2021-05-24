@@ -1,5 +1,5 @@
-import { loginPage } from '../support/helpers/pages/loginPage';
-import { testData } from '../support/helpers/TestData/generateData';
+import { loginPage } from '../../support/helpers/pages/loginPage';
+import { testData } from '../../support/helpers/TestData/generateData';
 
 describe("On the Login page, User", () => {
 

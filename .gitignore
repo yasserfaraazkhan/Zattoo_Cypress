@@ -1,5 +1,5 @@
 #Cypress
-TestReport/*
+TestReport/assets/*
 cypress/reports/*
 # Logs
 logs
