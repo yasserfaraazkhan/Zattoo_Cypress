@@ -66,7 +66,3 @@ npm run test
 ![Report with screenshot on failure](demo-with-Failure-screenshot-rep.gif)
 
 ![Run with Open UI](demo_with_UI_opened.gif)
-
-
-# CI
-![CI execution image](ci.png)
