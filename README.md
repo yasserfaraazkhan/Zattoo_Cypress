@@ -1,4 +1,4 @@
-# Zattoo_Cypress
+# Cypress API Testing with API Mocks and Visual Tests
 
 [![Run Cypress in chrome](https://github.com/yasserfaraazkhan/Zattoo_Cypress/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/yasserfaraazkhan/Zattoo_Cypress/actions/workflows/main.yml)
 
