@@ -12,8 +12,6 @@ jobs:
           browser: chrome
           spec: |
             cypress/integration/functionalTests/login.spec.js
-            cypress/integration/functionalTests/mockSignup.spec.js
-
   visualTests:
     runs-on: ubuntu-20.04
     container: cypress/browsers:node14.15.0-chrome86-ff82
