@@ -26,7 +26,7 @@ describe("On the Login page, User", () => {
             .enterLoginDetails(testData.getNewUser())
     });
 
-    it('should be able to successfully login into the applicatio', () => {
+    xit('should be able to successfully login into the application', () => {
 
         loginPage
             .enterLoginDetails(testData.getValidLoginUser())
