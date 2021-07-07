@@ -27,7 +27,7 @@
   "homepage": "https://github.com/yasserfaraazkhan/Zattoo_Cypress#readme",
   "devDependencies": {
     "chance": "1.1.7",
-    "cypress": "7.6.0",
+    "cypress": "7.7.0",
     "cypress-browser-permissions": "1.0.5",
     "cypress-image-snapshot": "4.0.1",
     "cypress-mochawesome-reporter": "2.2.0",
