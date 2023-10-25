@@ -31,7 +31,7 @@
     "cypress-browser-permissions": "1.0.5",
     "cypress-image-snapshot": "4.0.1",
     "cypress-mochawesome-reporter": "2.2.0",
-    "cypress-multi-reporters": "1.5.0",
+    "cypress-multi-reporters": "1.6.4",
     "cypress-wait-until": "1.7.1",
     "faker": "5.5.3",
     "mocha": "9.0.2",
